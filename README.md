@@ -9,7 +9,7 @@
 !-->
 
 <?php
-  $dir = 'C:\Users\Sharwin\Documents\Github\Resume';
+  $dir = "C:\Users\Sharwin\Documents\Github\Resume";
   $name = 'main.pdf';
   exec("/bin/convert $dir$name $dir$name.png");
   print '<img src="$dir$name.png" />';
