@@ -23,5 +23,5 @@
  
  <!-- Embed PDF File -->
 <object data="C:\Users\Sharwin\Documents\Github\Resume\main.pdf" type="application/pdf" title="SamplePdf" width="500" height="720">
-    <a href="main.pdf">shree</a> 
+    <a href="main.pdf">PDF</a> 
 </object>
