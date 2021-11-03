@@ -8,6 +8,10 @@
 </object>
 !-->
 
+
+<iframe src="https://github.com/Sharwin24/Resume/blob/master/main.pdf&embedded=true" style="width:595px; height:842px;" frameborder="0"></iframe>
+
+<!-- 
 <?php
   $dir = "C:/Users/Sharwin/Documents/Github/Resume";
   $name = 'main.pdf';
@@ -15,3 +19,4 @@
   print '<img src="$dir$name.png" />';
 ?>
 
+ -->
