@@ -31,7 +31,8 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=0.85cm,right=0.85cm,top=0.85cm,bottom=0.85cm,columnsep=0.75cm}
+% \geometry{left=0.85cm,right=0.85cm,top=0.85cm,bottom=0.85cm,columnsep=0.75cm}
+\geometry{left=0.825cm,right=0.825cm,top=0.825cm,bottom=0.825cm,columnsep=0.70cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -170,6 +171,8 @@ pdfauthor = {Sharwin Patil}
     \vspace{-1.5em} % Reduce space between Header and preceding text
     % ----- EXPERIENCE -----
     \cvsection{Experience}
+    \cvevent{Fulfil Solutions Inc}{| Incoming Robotics Software Controls Co--op}{07/2022 -- 12/2022}{Redwood City, CA}
+
     \cvevent{Doble Engineering}{| Software Engineering Co--op}{07/2021 -- 12/2021}{Marlborough, MA}
     \begin{itemize}
         \item Developed an external data persistence mechanism in C\# with the .NET framework, designed to handle I/O management, to be inserted into various Doble propietary software products.
@@ -255,17 +258,23 @@ pdfauthor = {Sharwin Patil}
     \cvevent{Chess Robot}{\cvrepo{| \faGithub}{https://github.com/Connor205/Chess-Robot-NURobotics}}{03/2021 -- Present}{}
     \begin{itemize}
         \item[] \textbf{NURobotics Club}
-        \item Construct a X/Y Plotter with a modified manipulator to interact with chess pieces.
+        \item Construct a X/Y Plotter with a modified manipulator to interact with custom chess pieces. Built with custom-designed and 3D printed parts using SolidWorks and Prusa 3D Printers.
         \item Implement Arduino and Rasberry Pi components to read the board state, control motors, and display information to the user.
-        \item Design custom chess pieces and parts for the X/Y Plotter utilizing a 3D Printer.
         \item Incorporate a Chess AI to play against a human player.
     \end{itemize}
 
-    \cvevent{Autonomous Swarm Cleaning Robots}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/RoboTech}}{04/2022}{Atlanta, GA}
+    \cvevent{Autonomous Swarm Marine Robots}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/RoboTech}}{04/2022}{Atlanta, GA}
     \begin{itemize}
         \item[] \textbf{RoboTech 2022 Hackathon Submission}
-        \item Created a simulation for swarm of aquatic drones tasked with cleaning algal blooms within a body of water utilizing path-finding algorithms in Python
-        \item Implemented A* Search for multi-agent path-finding as well as RRT to generate paths for each drone
+        \item Created a graphical simulation in Python for a swarm of aquatic drones tasked with cleaning algal blooms within a body of water utilizing path-finding algorithms.
+        \item Implemented A* Search to generate paths for each drone to optimize the aglae coverage for each drone.
+        \item Included an RRT inspired algorithm to generate random paths for each drone based on a set of constraints.
+    \end{itemize}
+
+    \cvevent{Excel To LaTeX Converter}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Excel-To-LaTeX}}{12/2020}{}
+    \begin{itemize}
+        \item[] \textbf{Personal Project}
+        \item Created a Python script to accept user input of copied Excel cells and convert to source code for a LaTeX table.
     \end{itemize}
 
     % \cvevent{Interactive Chess in Java}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/JavaChess}}{09/2021 -- Present}{}
@@ -273,12 +282,6 @@ pdfauthor = {Sharwin Patil}
     %     \item Develop a command-line application in Java to play Chess with textual prompts and input.
     %     \item Design with an emphasis on extendibility using the Model-View-Controller design pattern; implement a textual view with plans to later introduce a graphical interface and view.
     % \end{itemize}
-
-    \cvevent{Excel To LaTeX Converter}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Excel-To-LaTeX}}{12/2020}{}
-    \begin{itemize}
-        \item Developed Python script to accept user input of copied Excel cells and convert to source code for a LaTeX table.
-        \item Implemented user input to allow for improved utility and customization of the table's settings.
-    \end{itemize}
 
     % \cvevent{Digital Keyboard in Verilog}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/EECE2160}\vspace{-1em}}{12/2020}{}
     % \begin{itemize}
