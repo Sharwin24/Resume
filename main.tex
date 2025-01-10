@@ -59,38 +59,25 @@
 \definecolor{PrimaryColor}{HTML}{0A6069} % Dark Blue: 001F5A
 \definecolor{SecondaryColor}{HTML}{13737C} % Lighter Blue: 0039AC
 \definecolor{ThirdColor}{HTML}{D22B2B} % Orange: F3890B
+\definecolor{Text}{HTML}{2E2E2E}
 \definecolor{BackgroundColor}{HTML}{E2E2E2}
-\colorlet{name}{PrimaryColor}
-\colorlet{tagline}{PrimaryColor}
-\colorlet{heading}{PrimaryColor}
-\colorlet{headingrule}{ThirdColor}
-\colorlet{subheading}{SecondaryColor}
-\colorlet{accent}{SecondaryColor}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
-\pagecolor{BackgroundColor}   
-% % % ----- DARK MODE -----
-% \definecolor{BackgroundColor}{HTML}{242424}
-% \definecolor{SlateGrey}{HTML}{6F6F6F}
-% \definecolor{LightGrey}{HTML}{ABABAB}
-% \definecolor{PrimaryColor}{HTML}{336EE4}
-% \colorlet{name}{PrimaryColor}
-% \colorlet{tagline}{PrimaryColor}
-% \colorlet{heading}{PrimaryColor}
-% \colorlet{headingrule}{PrimaryColor}
-% \colorlet{subheading}{PrimaryColor}
-% \colorlet{accent}{PrimaryColor}
-% \colorlet{emphasis}{LightGrey}
-% \colorlet{body}{LightGrey}
-% \pagecolor{BackgroundColor}
+\colorlet{name}{Text}
+\colorlet{tagline}{Text}
+\colorlet{heading}{Text}
+\colorlet{headingrule}{Text}
+\colorlet{subheading}{Text}
+\colorlet{accent}{Text}
+\colorlet{emphasis}{Text}
+\colorlet{body}{Text}
+\pagecolor{BackgroundColor}
 
 \usepackage{hyperref}
 \hypersetup{
 % pdfborder = {0,0,0},
 breaklinks = true,
 bookmarksnumbered = true,
-% pdftitle = {Patil Resume},
-% pdfauthor = {Sharwin Patil},
+pdftitle = {SharwinPatil Resume},
+pdfauthor = {Sharwin Patil},
 pdfnewwindow = true,      % links in new window 
 pdfstartview = {FitH},    % initial view
 }
@@ -115,13 +102,12 @@ pdfstartview = {FitH},    % initial view
 
 \begin{document}
 \name{Sharwin Patil}
-% \tagline{Co--op/Internship Availability: June -- December 2023}
 \tagline{}
 %% You can add multiple photos on the left or right
 % \photoL{4cm}{closePhoto}
 \personalinfo{
     \email{sharwin24@gmail.com}
-    \phone{+1 (925) 389-8466}
+    \phone{925-389-8466}
     \github{Sharwin24}
     \linkedin{SharwinPatil}
     \homepage{sharwinpatil.info}
@@ -133,214 +119,87 @@ pdfstartview = {FitH},    % initial view
 
 %% Set the left/right column width ratio to 6:4. (0.75)
 \columnratio{0.68} % 0.65 - 0.75
-\vspace{-2em}
-% Start a 2-column paracol. Both the left and right columns will automatically break across pages if things get too long.
-\begin{paracol}{2}
-
+    \vspace{-1.8em}
     % ----- EDUCATION -----
     \cvsection{Education}
-    \cvevent{Northwestern University }{| Candidate for M.S. in Robotics}{Expected Graduation: 12/2025}{Chicago, IL}
+    \cvevent{Northwestern University }{| M.S. in Robotics}{Expected Graduation: 12/2025}{Chicago, IL}
     \begin{itemize}
-        \item Relevant Courses: ROS, Robotics Manipulation, Dynamics, Machine Learning
+        \item Relevant Courses: ROS, Robotic Manipulation, Dynamics, Machine Learning
     \end{itemize}
     \cvevent{Northeastern University }{| B.S. in Computer Engineering \& Computer Science, Minor in Robotics}{Graduated: 05/2024}{Boston, MA}
     \begin{itemize}
-        \item GPA: 3.6, Dean's List (all semesters)
-        \item Relevant Courses: Object-Oriented Design, Algorithms \& Data, Robotics Sensing \& Navigation, Robotic Science \& Systems, Computer Systems, Embedded Design: Enabling Robotics, Circuits \& Signals: Biomedical Applications, Robot Dynamics \& Control, Artificial Intelligence, Game Programming.
-              %\newline Fundamentals of Computer Science (\rom{2}), Fundamentals of Electronics, Fundamentals of Digital Design, Fundamentals of Networks, Cornerstone of Engineering, Calculus (\rom{3}).
-              %\item Fundamental Courses: Software Engineering, Computer Science (\rom{2}), Electronics, Digital Design \& Computer Organization, Data Visualization, Networks, Cornerstone of Engineering, Calculus (\rom{3}), Differential Equations \& Linear Algebra, Probability \& Statistics.
-        \item Activities: \href{https://web.northeastern.edu/nurobotics/}{NURobotics} Project Lead \& Lead Intro Course Instructor, Club Water Polo President, First-year Engineering Tutor, TA for Robot Dynamics \& Control.
+        \item GPA: 3.6, Dean's List (all semesters).
+        \item Lead Intro Course Instructor for NEU Robotics Club, Club Water Polo President, TA for Robot Dynamics \& Control.
+        \item Relevant Courses: Robot Sensing \& Navigation, Robot Dynamics \& Control, Robotics science and 
     \end{itemize}
-    % \cvevent{University College Dublin }{| NUin Ireland}{Fall 2019}{Dublin, Ireland}
-    % \begin{itemize}
-    %     \item Activities: Clontarf U19 Water Polo Club, 2019 UCD annual ``Startathon'' (placed 2nd).
-    % \end{itemize}
-
-    % \cvevent{Dougherty Valley High School}{}{06/2019}{San Ramon, CA}
-    % \begin{itemize}
-    %     \item Activities: Vex Robotics Competition (VRC) (Team Captain and Lead Design/Build), Led VRC team to Vex Robotics World Championship in 2018 \& 2019. Varsity Water Polo (Captain).
-    % \end{itemize}
     % ----- EDUCATION -----
-    \vspace{-1.85em} % Reduce space between Header and preceding text
+    \vspace{-1.4em}
     % ----- EXPERIENCE -----
     \cvsection{Experience}
-    \cvevent{\href{https://www.greensightag.com/}{GreenSight}}{| UAV Robotics Engineer Co--op}{06/2023 -- 12/2023}{Boston, MA}
+    \cvevent{GreenSight}{| UAV Robotics Engineer Co--op}{06/2023 -- 12/2023}{Boston, MA}
     \begin{itemize}
         \item Developed RTOS firmware for communications between a swarm of nano-drones and GCS over LoRa.
-        \item Wrote firmware for a micro-controller to manage a charging station for autonomous solar lawn-mowers.
         \item Implemented a Hardware-Abstraction-Layer (HAL) in C for the ESP32 platform to interface with a custom LoRa chipset.
-              % \item Created a web-server in C for the ESP32 platform.
+        % \item Wrote firmware for a micro-controller to manage a charging station for autonomous solar lawn-mowers.
     \end{itemize}
-    \cvevent{\href{https://www.fulfil.com/}{Fulfil Solutions Inc}}{| Robotics Software Controls Co--op}{07/2022 -- 12/2022}{Redwood City, CA}
+    \cvevent{Fulfil Solutions Inc.}{| Robotics Software Controls Co--op}{07/2022 -- 12/2022}{Redwood City, CA}
     \begin{itemize}
         \item Developed sequencing code in C\# for high-level behavior planning and task assignment for heterogeneous robotic agents.
         \item Composed data fetching functions to bridge C\# sequencing code to MongoDB.
-        \item Optimized AGV planning and curated heuristics for improving factory performance.
+        \item Optimized AGV planning and curated heuristics for maintaining the factory's health while improving performance.
         \item Deployed factory-wide alerts and notifications for operators to react with relevant safety measures.
     \end{itemize}
     \cvevent{Doble Engineering}{| Software Engineering Co--op}{07/2021 -- 12/2021}{Marlborough, MA}
     \begin{itemize}
-        \item Developed an external data persistence mechanism in C\# to be inserted into various Doble proprietary software products built with the .NET framework.
-        \item Designed and deployed an installation wizard using Windows Presentation Foundation (WPF) for updating firmware on Doble instruments.
-        \item Maintained software products in an Agile project management environment.
+        \item Developed an external data persistence mechanism in C\# running on the .NET framework for various Doble software products.
+        \item Designed and deployed a firmware installation wizard using Windows Presentation Foundation (WPF) for Doble instruments.
     \end{itemize}
-    \cvevent{Northeastern University}{| Robotic Arm Educational Kit Research}{05/2022 -- 05/2024}{Boston, MA}
-    \begin{itemize}
-        \item Designed and constructed a robotic manipulator as an educational tool for students to utilize for learning the kinematics and dynamics of robotic manipulators.
-        \item Developed custom libraries in C++ for students with little coding experience to program movements, perform trajectory planning, and compute kinematics.
-        \item Collaborated with professor \href{https://coe.northeastern.edu/people/sipahi-rifat/}{Rifat Sipahi} to introduce the kit to the course ME3460: Robotic Dynamics and Control for the Spring 2024 semester.
-        \item Applied and obtained grant money from the PEAK Experience Award committee.
-    \end{itemize}
-    % \cvevent{Suspension Robotics}{| Robotics Software Engineer}{01/2023 -- 05/2023}{Boston, MA}
-    % \begin{itemize}
-    %     \item Developed communications firmware for a 6-DOF cable driven parallel robot in C++ using I2C/SPI.
-    %     \item Implemented cable-control algorithm for constant cable tension during robot motions.
-    % \end{itemize}
-    % \cvevent{Northeastern University}{| First-Year Engineering Tutor}{01/2021 -- present}{Boston, MA}
-    % \begin{itemize}
-    %     \item Tutor first-year students in SolidWorks, C++, AutoCAD, MATLAB, and Arduino.
-    %     \item Assist students with projects utilizing workshop machines (Bandsaw, Laser Cutter, 3D Printers).
-    %     \item Member of the FYELIC Advisory team, which guides and aids prospective FYELIC tutors.
-    % \end{itemize}
-    % \cvevent{Dougherty Valley Robotics Club }{| Team Captain \& Summer Camp Mentor}{09/2015 -- 06/2019}{San Ramon, CA}
-    % \begin{itemize}
-    %     \item Drove the design, engineering and fabrication process for a competitive robot that was able to interact with physical objects and perform tasks.
-    %     \item Wrote robot micro-controller in C++ for the control system.
-    %     \item Documented and recorded the engineering process to present to judges at tournaments.
-    %     \item Developed a curriculum to teach 30 middle school students the fundamentals of robotics with the VEXIQ system, students were ultimately able to construct and program a robot capable of completing multiple tasks and compete against other teams.
-    % \end{itemize}
-
-    % \cvevent{Chabot Space \& Science Center }{| Volunteer Lab Demonstrator }{06/2015 -- 09/2019}{Oakland, CA}
-    % \begin{itemize}
-    %     \item Explained science concepts to young kids utilizing experiments and demos.
-    %     \item Taught young students the scientific method and methodology when conducting experiments.
-    %     \item Answered many questions from kids and adults alike about various concepts and the science field in general.
-    % \end{itemize}
-
-    % \cvevent{City of San Ramon Aquatics }{| Lifeguard }{06/2019 -- 08/2019, 06/2020 -- 08/2020}{San Ramon, CA}
-    % \begin{itemize}
-    %     \item Certified in first aid, CPR, operation of an AED, Title 22, and administering emergency oxygen by American Red Cross.
-    %     \item Turned swimming and water polo passion around to help the community.
-    % \end{itemize}
     % ----- EXPERIENCE -----
-
-    % ----- AWARDS -----
-    \cvsection{Awards \& Certifications}
-    \cvtag{PEAK Experience Summit Award 2023}
-    \cvtag{SOLIDWORKS Associate (CSWA)}
-    \cvtag{BSA Eagle Scout}
-    \cvtag{VRC CA State Champion 2018 \& 2019}
-    % \cvtag{VRC Awards (17x)}
-    % \cvtag{Varsity Water Polo MVP 2018 \& 2019}
-    % ----- AWARDS -----
-
-    % use ONLY \newpage if you want to force a page break for
-    % ONLY the current column
-    % \newpage
-
-    %% Switch to the right column. This will now automatically move to the second page if the content is too long.
-    \switchcolumn
-    \vspace{-0.15em}
-    % ----- STRENGTHS -----
+    \vspace{-1.45em}
+    % ----- PROJECTS -----
+    \cvsection{Projects}
+    \cvevent{Automated Poker Table}{\cvrepo{| \faGithub}{https://github.com/Connor205/B-I-K-E}}{01/2023 -- 04/2023}{}
+    \begin{itemize}
+        \item Designed a sensor-driven automated shuffler and card dealer with high repeatability.
+        \item Developed firmware for I2C and Serial communications between STM32 microcontrollers and a Raspberry Pi.
+        \item Delivered a complete and sophisticated system, awarding us first place for Northeastern's ECE Capstone 2023.
+    \end{itemize}
+    \cvevent{AGV Motion-Planning}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/HSKY}}{09/2022 -- 12/2022}{}
+    \begin{itemize}
+        \item Implemented Odometry from scratch in C++ with multithreading to asynchronously compute the robot's absolute pose.
+        \item Designed a trajectory generator using Hermite splines and Bezier curves.
+    \end{itemize}
+    \cvevent{Robot Arm Educational Kit}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Robotic-Arm}}{05/2022 -- 05/2024}{}
+    \begin{itemize}
+        \item Designed a 3-link planar robotic manipulator as an educational tool for students learning the kinematics and dynamics of manipulators.
+        \item Developed custom libraries in C++ for students with little coding experience to program movements and perform trajectory planning.
+        \item Collaborated with professor Rifat Sipahi to package the robot arm into a kit for the course ME3460: Robotic Dynamics and Control.
+    \end{itemize}
+    \cvevent{Robot Pen Thief}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Pen-Challenge}}{09/2024 -- 10/2024}{}
+    \begin{itemize}
+        \item Implemented an image pipeline with OpenCV to tune computer vision using the Intel Realsense camera for object centroid identification.
+        \item Sequenced the image pipeline with a controller for a robot arm to perform a grasping task with the end-effector.
+    \end{itemize}
+    % \cvevent{Chess Robot}{\cvrepo{| \faGithub}{https://github.com/Connor205/Chess-Robot-NURobotics}}{03/2021 -- 05/2022}{}
+    % \begin{itemize}
+    %     \item Designed a 3-axis gantry system in SolidWorks with an end-effector to grab custom chess pieces.
+    %     \item Implemented a custom serial interface between a Raspberry Pi and Arduino devices using command messages to perform low-level tasks.
+    % \end{itemize}
+    % ----- PROJECTS -----
+    % ----- SKILLS -----
+    \vspace{-1.55em}
     \cvsection{Skills}
-    \cvtag{C/C++}
+    \cvtag{Embedded C}
+    \cvtag{C++}
     \cvtag{Python}
     \cvtag{C\#}
     \cvtag{Java}
     \cvtag{Linux}
-    % \cvtag{Git}
+    \cvtag{Git}
     \cvtag{Unity}
-    \cvtag{ROS}
+    \cvtag{ROS/ROS2}
     \cvtag{MATLAB}
-    \cvtag{SolidWorks}
-    \cvtag{3D Printing}
-    \cvtag{LaTeX}
-    % \cvtag{Lisp}
-    % \cvtag{AutoCAD}
-    % \cvtag{Arduino}
-    % ----- STRENGTHS -----
-
-    % ----- PROJECTS -----
-    \vspace{-2em}
-    \cvsection{Projects}
-    % \cvevent{Robot Arm Educational Kit}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Robotic-Arm}}{05/2022 -- present}{}
-    % \begin{itemize}
-    %     \item Designed and constructed a 3-link planar robotic manipulator as an educational tool for students to utilize for learning the kinematics and dynamics of robotic manipulators.
-    %     \item Developed custom libraries in C++ for students with little coding experience to program movements and perform trajectory planning.
-    %     \item Collaborated with professor Rifat Sipahi to make the robot arm into a kit for the course ME3460: Robotic Dynamics and Control.
-    % \end{itemize}
-    \cvevent{AGV Motion-Planning}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/HSKY}}{09/2022 -- 12/2022}{}
-    \begin{itemize}
-        \item[] \textbf{NURobotics Club: VEXU Team HSKY}
-        \item Implemented an algorithm (Odometry) to compute a mobile robot's absolute position and orientation (pose) for use in autonomous navigation.
-        \item Developed C++ code to update the robot's pose from Odometry in real-time, enabling motion-profiling.
-        \item Designed a motion-planning algorithm to generate robot trajectories from desired pose inputs to follow using Odometry and PID controllers.
-    \end{itemize}
-    \cvevent{Chess Robot}{\cvrepo{| \faGithub}{https://github.com/Connor205/Chess-Robot-NURobotics}}{03/2021 -- 05/2022}{}
-    \begin{itemize}
-        \item[] \textbf{NURobotics Club Project}
-        \item Constructed a X/Y Plotter with a modified manipulator to interact with custom chess pieces. Built with custom-designed, 3D printed parts using SolidWorks and Prusa 3D Printers.
-        \item Implemented Arduino and Rasberry Pi components to control stepper motors, read the board state using computer vision, and display information to the user.
-    \end{itemize}
-    \cvevent{Aquatic Swarm Robots}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/RoboTech}}{04/2022}{Atlanta, GA}
-    \begin{itemize}
-        \item[] \textbf{RoboTech 2022 Hackathon Submission}
-        \item Created a graphical simulation in Python for a swarm of autonomous aquatic drones tasked with cleaning algal blooms within a body of water utilizing path-finding algorithms such as A* Search and RRT.
-    \end{itemize}
-    \cvevent{Image Manipulator}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Image-Manipulation-and-Enhancement}}{06/2021}{}
-    \begin{itemize}
-        \item[] \textbf{CS3500: Object-Oriented Design}
-        \item Developed a Java project to apply manipulations and enhancements to images and export them as various file types.
-        \item Utilized the Model-View-Controller design pattern for improved extendibility and ease of modification.
-    \end{itemize}
-    % \cvevent{Excel To LaTeX Converter}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Excel-To-LaTeX}}{12/2020}{}
-    % \begin{itemize}
-    %     \item[] \textbf{Personal Project}
-    %     \item Created a Python script to accept user input of copied Excel cells and convert to source code for a LaTeX table.
-    % \end{itemize}
-
-    % \cvevent{Interactive Chess in Java}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/JavaChess}}{09/2021 -- Present}{}
-    % \begin{itemize}
-    %     \item Develop a command-line application in Java to play Chess with textual prompts and input.
-    %     \item Design with an emphasis on extendibility using the Model-View-Controller design pattern; implement a textual view with plans to later introduce a graphical interface and view.
-    % \end{itemize}
-
-    % \cvevent{Digital Keyboard in Verilog}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/EECE2160}\vspace{-1em}}{12/2020}{}
-    % \begin{itemize}
-    %     \item Developed Verilog modules to play notes via a 4x4 matrix keypad.
-    % \end{itemize}
-
-    % \cvevent{Fishy Game in Java}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Fundies-2/tree/main/Assignment5}}{10/2020}{}
-    % \begin{itemize}
-    %     \item[] \textbf{CS2500: Fundamentals of Computer Science 2}
-    %     \item Developed a fully functioning ``Fishy'' game in Java utilizing a graphics library.
-    %     \item Implemented an Object-Oriented approach in addition to abstractions for the various functions required.
-    %     \item Collaborated with a classmate and utilized a GitHub repository to document the workflow.
-    % \end{itemize}
-
-    % \cvevent{FloodIt Game in Java}{\cvrepo{| \faGithub}{https://github.com/Sharwin24/Fundies-2/tree/main/Assignment92}}{11/2020}{}
-    % \begin{itemize}
-    %     \item[] \textbf{CS2500: Fundamentals of Computer Science 2}
-    %     \item Developed a fully functioning ``FloodIt'' game in Java utilizing a graphics library.
-    %     \item Implemented an Object-Oriented approach in addition to abstractions for the various functions required.
-    %     \item Collaborated with a classmate and utilized a GitHub repository to document the workflow.
-    % \end{itemize}
-
-    % \cvevent{BSA Eagle Scout Leadership Project}{\cvrepo{| \faImage}{https://photos.app.goo.gl/7hF8pe7LUsPMvkSm8}}{08/2018 -- 10/2018}{}
-    % \begin{itemize}
-    %     \item Combined passion for engineering and helping the community by designing 2 bookshelves for high school English teacher's classroom.
-    %     \item Utilized many power tools and learned several woodworking techniques.
-    % \end{itemize}
-    % ----- PROJECTS -----
-
-    % % ----- AWARDS -----
-    % \cvsection{Awards}
-    % \cvtag{BSA Eagle Scout}
-
-    % \cvtag{VRC CA State Champion 2018 \& 2019}
-    % \cvtag{VRC Awards (17x)}
-
-    % \cvtag{Varsity Water Polo MVP 2018 \& 2019}
-    % % ----- AWARDS -----
-\end{paracol}
+    \cvtag{SolidWorks (CSWA)}
+    \cvtag{KiCad}
+    % ----- SKILLS -----
 \end{document}
