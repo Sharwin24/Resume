@@ -3,6 +3,7 @@
 !.gitignore
 !main.pdf
 !main.tex
+!altacv.cls
 !README.md
 
 .fake
