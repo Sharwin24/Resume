@@ -306,14 +306,24 @@
 
 % v1.1.4: fixes inconsistent font size
 % Fork: structure modified to include change title, company name, start/end dates and work location (only a string)
+% \newcommand{\cvevent}[4]{%
+%   {\large\color{emphasis}#1}
+%   \ifstrequal{#2}{}{}{\large{\color{accent}#2}}
+%   \par\medskip\normalsize
+%   \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\color{accent}\faCalendar\color{emphasis}~#3}}}
+%   \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\color{accent}\faMapMarker\color{emphasis}~#4}}}\par
+%   \medskip\normalsize
+% }
+
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1}
   \ifstrequal{#2}{}{}{\large{\color{accent}#2}}
-  \par\medskip\normalsize
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}~#3}}}
-  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}~#4}}}\par
+  \par\smallskip\normalsize
+  \ifstrequal{#3}{}{}{{\small\makebox[0.75\linewidth][l]{\color{emphasis}~#3}}}
+  \ifstrequal{#4}{}{}{{\small\makebox[0.25\linewidth][l]{\color{emphasis}~#4}}}\par
   \medskip\normalsize
 }
+
 
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
