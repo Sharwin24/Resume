@@ -211,15 +211,15 @@
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
-\NewInfoField{email}{\faAt}[mailto:]
+\NewInfoField{email}{}[mailto:]
 \NewInfoField{mailaddress}{\faEnvelope}
-\NewInfoField{phone}{\faPhone}
-\NewInfoField{homepage}{\faGlobe}[https://]
+\NewInfoField{phone}{}
+\NewInfoField{homepage}{}[https://www.]
 \NewInfoField{twitter}{\faTwitter}[https://twitter.com/]
-\NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/]
-\NewInfoField{github}{\faGithub}[https://github.com/]
+\NewInfoField{linkedin}{}[https://linkedin.com/in/sharwinpatil]
+\NewInfoField{github}{}[https://github.com/Sharwin24]
 \NewInfoField{orcid}{\aiOrcid}[https://orcid.com/]
-\NewInfoField{location}{\faMapMarker}
+\NewInfoField{location}{}
 % Fork: New optional options added for dev and medium accounts
 \NewInfoField{dev}{\faDev}[https://dev.to/]
 \NewInfoField{medium}{\faMedium}[https://medium.com/@]
