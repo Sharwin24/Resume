@@ -53,7 +53,6 @@
   \renewcommand{\familydefault}{\sfdefault}
 \fi
 
-% ----- LIGHT MODE -----
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{PrimaryColor}{HTML}{0A6069} % Dark Blue: 001F5A
@@ -120,32 +119,39 @@ pdfstartview = {FitH},    % initial view
 
 %% Set the left/right column width ratio to 6:4. (0.75)
 \columnratio{0.68} % 0.65 - 0.75
-    \vspace{-1.8em}
+    \vspace{-1.85em}
     % ----- EDUCATION -----
     \cvsection{Education}
-    \cvevent{\textbf{Northwestern University} }{| \textbf{Master of Science in Robotics}}{\textit{Expected Graduation: 12/2025}}{\textit{Chicago, IL}}
+    \cvevent{\textbf{Northwestern University}}{| \textbf{Master of Science in Robotics}}{\textit{Expected Graduation: 12/2025}}{\textit{Chicago, IL}}
     % \begin{itemize}
     %     \item Relevant Courses: ROS, Robotic Manipulation, Mechatronics, Dynamics, Machine Learning, Deep Learning.
     % \end{itemize}
-    \cvevent{\textbf{Northeastern University} }{| \textbf{B.S. in Computer Engineering \& Computer Science, Minor in Robotics}}{\textit{Graduated: 05/2024}}{\textit{Boston, MA}}
+    \cvevent{\textbf{Northeastern University}}{| \textbf{B.S. in Computer Engineering \& Computer Science, Minor in Robotics}}{\textit{Graduated: 05/2024}}{\textit{Boston, MA}}
     % \begin{itemize}
     %     \item GPA: 3.6, Dean's List (all semesters).
     %     \item Lead Intro Course Instructor for NEU Robotics Club, Club Water Polo President, TA for Robot Dynamics \& Control.
     %     \item Relevant Courses: Robot Sensing \& Navigation, Robot Dynamics \& Control, Embedded Design, Computer Systems.
     % \end{itemize}
     % ----- EDUCATION -----
-    \vspace{-1.4em}
+    \vspace{-1.6em}
+    \cvsection{Skills}
+    \begin{itemize}
+        \item[] \textbf{Robotics:} ROS/ROS2, Nav2, MoveIt, RViz2, Gazebo, OpenCV
+        \item[] \textbf{Software:} Embedded C, C++, Python, C\#, .NET, Java, Matlab, Linux, Git, Unity, Docker, SolidWorks (CSWA)
+        \item[] \textbf{Machine Learning:} Computer Vision, PyTorch, CNNs, Reinforcement Learning (DQN, PPO) 
+    \end{itemize}
+    \vspace{-1.5em}
     % ----- EXPERIENCE -----
     \cvsection{Experience}
     \cvevent{\textbf{GreenSight}}{| \textbf{UAV Robotics Engineer Co--op}}{\textit{06/2023 -- 12/2023}}{\textit{Boston, MA}}
     \begin{itemize}
-        \item Developed RTOS firmware for communications between a swarm of nano-drones and GCS over LoRa
+        \item Developed RTOS firmware for communications between a swarm of drones and GCS over LoRa for collecting real-time weather data
         \item Implemented a Hardware-Abstraction-Layer (HAL) in C for the ESP32 platform to interface with a custom LoRa chipset
-        \item Wrote firmware for a micro-controller to manage a charging station for autonomous solar lawn-mowers
+        \item Created a custom SPI driver for the ESP32 to connect to peripherals for the drone's data collection
     \end{itemize}
     \cvevent{\textbf{Fulfil Solutions}}{| \textbf{Robotics Software Controls Co--op}}{\textit{07/2022 -- 12/2022}}{\textit{Redwood City, CA}}
     \begin{itemize}
-        \item Developed sequencing code in C\# for high-level behavior planning and task assignment for heterogeneous robotic agents
+        \item Developed sequencing code in C\# for high-level behavior planning and task assignment for up to 50 heterogeneous robotic agents
         \item Composed data fetching functions to bridge C\# sequencing code to MongoDB
         \item Optimized AGV planning and curated heuristics for maintaining the factory's health while improving performance
         \item Deployed factory-wide alerts and notifications for operators to react with relevant safety measures
@@ -156,51 +162,31 @@ pdfstartview = {FitH},    % initial view
         \item Designed and deployed a firmware installation wizard using Windows Presentation Foundation (WPF) for Doble instruments
     \end{itemize}
     % ----- EXPERIENCE -----
-    % ----- SKILLS -----
-    \vspace{-1.55em}
-    \cvsection{Skills}
-    \begin{itemize}
-        \item[] \textbf{Robotics:} ROS/ROS2, Nav2, MoveIt, RViz2, Gazebo, OpenCV
-        \item[] \textbf{Software:} Embedded C, C++, Python, C\#, Java, Matlab, Linux, Git, Unity, SolidWorks (CSWA)
-    \end{itemize}
-    % \cvtag{Embedded C}
-    % \cvtag{ROS/ROS2}
-    % \cvtag{C++}
-    % \cvtag{Python}
-    % \cvtag{C\#}
-    % \cvtag{Java}
-    % \cvtag{Linux}
-    % \cvtag{Git}
-    % \cvtag{Unity}
-    % \cvtag{MATLAB}
-    % \cvtag{SolidWorks (CSWA)}
-    % \cvtag{KiCad}
-    % ----- SKILLS -----
-    \vspace{-1.45em}
+    \vspace{-1.5em}
     % ----- PROJECTS -----
     \cvsection{Projects}
     \cvevent{\textbf{Automated Poker Table}}{}{\textit{01/2023 -- 04/2023}}{}
     \begin{itemize}
-        \item Designed a sensor-driven automated shuffler and card dealer with high repeatability
-        \item Developed firmware for I2C and Serial communications between STM32 microcontrollers and a Raspberry Pi
+        \item Designed an automated card shuffler and dealer with stepper motors, 3D printed parts, and sensors for detecting cards
+        \item Developed firmware for I2C and serial communications between STM32 microcontrollers and a Raspberry Pi
+        \item Trained a Convolutional Neural Network to classify cards for game management and software shuffling
         \item Earned first place for Northeastern's ECE Capstone 2023
     \end{itemize}
     \cvevent{\textbf{AGV Motion-Planning}}{}{\textit{09/2022 -- 12/2022}}{}
     \begin{itemize}
-        \item Implemented Odometry from scratch in C++ with multithreading to asynchronously compute the robot's absolute pose
-        \item Designed a trajectory generator using Hermite splines and Bezier curves
+        \item Implemented Odometry from scratch in C++ with multithreading and thread-safety to asynchronously compute the robot's absolute pose
+        \item Designed a motion trajectory generator using Hermite splines and Bezier curves
     \end{itemize}
     \cvevent{\textbf{Robot Arm Educational Kit}}{}{\textit{05/2022 -- 05/2024}}{}
     \begin{itemize}
-        \item Designed a 3-link planar robotic manipulator as an educational tool for students learning the kinematics and dynamics of manipulators
+        \item Engineered a 3-link planar robotic manipulator as an educational tool for students learning the kinematics and dynamics of manipulators
         \item Developed custom libraries in C++ for students with little coding experience to program movements and perform trajectory planning
-        \item Collaborated with professor Rifat Sipahi to package the robot arm into a kit for students to assemble and program
+        \item Collaborated with professor Rifat Sipahi to package the robot into a kit, focusing on ease of use and curriculum compatibility 
     \end{itemize}
     \cvevent{\textbf{Chess Robot}}{}{\textit{03/2021 -- 05/2022}}{}
     \begin{itemize}
         \item Designed a 3-axis gantry system in SolidWorks with an end-effector to grab custom chess pieces
-        \item Devised a custom serial interface between a Raspberry Pi and Arduino devices using command messages to perform low-level tasks
-        \item Implemented a computer vision model in OpenCV for identifying the game state and verified accuracy over several games
+        \item Integrated a computer vision model in OpenCV for identifying the game state and verified accuracy over several games
     \end{itemize}
     \cvevent{\textbf{Toasting Bread with Franka Robot Arm}}{}{\textit{11/2024 -- 12/2024}}{}
     \begin{itemize}
