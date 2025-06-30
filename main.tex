@@ -77,7 +77,7 @@ breaklinks = true,
 bookmarksnumbered = true,
 pdftitle = {SharwinPatil Resume},
 pdfauthor = {Sharwin Patil},
-pdfnewwindow = true,      % links in new window 
+pdfnewwindow = true,      % links in new window
 pdfstartview = {FitH},    % initial view
 }
 
@@ -134,13 +134,17 @@ pdfstartview = {FitH},    % initial view
     \vspace{-1.6em}
     \cvsection{Skills}
     \begin{itemize}
-        \item[] \textbf{Robotics:} ROS/ROS2, Nav2, MoveIt, RViz2, Gazebo, OpenCV, PID Control, Robot Kinematics \& Dynamics
+        \item[] \textbf{Robotics:} ROS/ROS2, Nav2, MoveIt, RViz2, Gazebo, OpenCV, Robot Kinematics, Dynamics, \& Manipulation
         \item[] \textbf{Software:} Embedded C, C++, Python, C\#, .NET, Java, Matlab, Linux, Git, Unity, Docker, SolidWorks (CSWA)
-        \item[] \textbf{Machine Learning:} Computer Vision, PyTorch, CNNs, Reinforcement Learning (DQN, PPO) 
+        \item[] \textbf{Machine Learning:} Computer Vision, PyTorch, CNNs, Reinforcement Learning (DQN, PPO)
     \end{itemize}
     \vspace{-1.5em}
     % ----- EXPERIENCE -----
     \cvsection{Experience}
+    \cvevent{\textbf{Locus Robotics}}{| \textbf{Planning \& Controls Intern}}{\textit{06/2025 -- Present}}{\textit{Remote}}
+    \begin{itemize}
+        \item Reduced mobile robots' downtime by 30\% by optimizing charging behavior and battery management when routing robots
+    \end{itemize}
     \cvevent{\textbf{GreenSight}}{| \textbf{UAV Robotics Engineer Co--op}}{\textit{06/2023 -- 12/2023}}{\textit{Boston, MA}}
     \begin{itemize}
         \item Developed RTOS firmware for communications between a swarm of drones and GCS over LoRa for collecting real-time weather data
@@ -165,8 +169,9 @@ pdfstartview = {FitH},    % initial view
     \cvsection{Projects}
     \cvevent{\textbf{Open Sourced ROS2 Delta Robot}}{}{\textit{01/2025 -- 03/2025}}{}
     \begin{itemize}
-        \item Designed and fabricated a 3-DOF delta robot using 3D printed parts
-        \item Created open-source ROS2 packages to interface with the robot
+        \item Designed and fabricated a 3-DOF delta robot using 3D printed parts and Dynamixel motors
+        \item Derived Jacobian for planning and executing both position and velocity trajectories
+        \item Authored a configurable ROS 2 package to interface with any delta robot and provide motion planning and sensor telemetry
     \end{itemize}
     \cvevent{\textbf{Toasting Bread with Franka Robot Arm}}{}{\textit{11/2024 -- 12/2024}}{}
     \begin{itemize}
@@ -174,10 +179,10 @@ pdfstartview = {FitH},    % initial view
         \item Utilized an Intel Realsense camera to identify april tag markers for the robot to interact with the scene
         \item Collaborated within a group of students to sequence the camera and robot with the scene elements to autonomously toast bread
     \end{itemize}
-    \cvevent{\textbf{Mobile Manipulator Simulation}}{}{\textit{11/2024 -- 12/2024}}{}
+    \cvevent{\textbf{KUKA Mobile Manipulator Pick and Place Simulation}}{}{\textit{11/2024 -- 12/2024}}{}
     \begin{itemize}
         \item Implemented a task-space feed-forward controller for the KUKA YouBot in Python for pick and place tasks
-        \item Derived Jacobian for omni-directional mobile base and robotic arm to generate velocity trajectories
+        \item Derived Jacobian for omni-directional mobile base and robotic arm to generate velocity trajectories for robot arm and the mobile base
     \end{itemize}
     \cvevent{\textbf{Automated Poker Table}}{}{\textit{01/2023 -- 04/2023}}{}
     \begin{itemize}
