@@ -25,7 +25,7 @@ jobs:
       # 3) Copy the PDF into your site's static folder
       - name: Copy resume PDF into website
         run: |
-          mkdir -p content/resume
+          mkdir -p site/content/resume
           cp SharwinPatilResume.pdf site/content/resume/SharwinPatilResume.pdf
 
       # 4) Commit & push if there are changes
