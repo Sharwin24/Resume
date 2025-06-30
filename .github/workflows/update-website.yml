@@ -3,7 +3,7 @@ name: Sync Resume PDF to Website
 on:
   push:
     branches:
-      - main      # or whichever branch you use
+      - master      # or whichever branch you use
 
 jobs:
   sync-resume:
