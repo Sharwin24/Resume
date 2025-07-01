@@ -26,7 +26,7 @@ jobs:
       - name: Copy resume PDF into website
         run: |
           mkdir -p site/content/resume
-          cp SharwinPatilResume.pdf site/content/resume/SharwinPatilResume.pdf
+          cp Resume/main.pdf site/content/resume/SharwinPatilResume.pdf
 
       # 4) Commit & push if there are changes
       - name: Commit & push changes
