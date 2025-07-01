@@ -37,7 +37,7 @@ jobs:
           cd site
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          git add site/content/resume/SharwinPatilResume.pdf
+          git add content/resume/SharwinPatilResume.pdf
           git diff --cached --exit-code || ( \
             git commit -m "chore: update resume PDF" && \
             git push \
