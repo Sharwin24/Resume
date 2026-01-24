@@ -120,7 +120,7 @@ pdfstartview = {FitH},    % initial view
     \vspace{-1.75em}
     % ----- EDUCATION -----
     \cvsection{Education}
-    \cvevent{\textbf{Northwestern University}}{| \textbf{Master of Science in Robotics}}{\textit{Expected Graduation: 12/2025}}{\textit{Chicago, IL}}
+    \cvevent{\textbf{Northwestern University}}{| \textbf{Master of Science in Robotics}}{\textit{Graduation: 12/2025}}{\textit{Chicago, IL}}
     \cvevent{\textbf{Northeastern University}}{| \textbf{B.S. in Computer Engineering \& Computer Science, Minor in Robotics}}{\textit{Graduated: 05/2024}}{\textit{Boston, MA}}
     % ----- EDUCATION -----
     \vspace{-1.6em}
@@ -133,17 +133,22 @@ pdfstartview = {FitH},    % initial view
     \vspace{-1.5em}
     % ----- EXPERIENCE -----
     \cvsection{Experience}
+    \cvevent{\textbf{Fulfil Solutions}}{| \textbf{Robotics Software Engineer}}{\textit{10/2025 -- Present}}{\textit{Mountain View, CA}}
+    \begin{itemize}
+        \item Developed C\# behavior orchestration code for automated fulfillment systems optimizing multi-robot coordination
+        \item Optimized multi-agent task scheduling algorithms, increasing system throughput by 10--15\%
+    \end{itemize}
     \cvevent{\textbf{Locus Robotics}}{| \textbf{Planning \& Controls Intern}}{\textit{06/2025 -- 09/2025}}{\textit{Remote}}
     \begin{itemize}
-        \item Optimizing fleet behavior with new ROS services bridging navigation stack (C++) and the robot behavior stack (Python)
-        \item Performance-tested ROS services on large-scale maps with hundreds of data points, ensuring scalability for fleets of hundreds of robots
-        \item Democratized access to navigation behaviors by integrating new features into the existing ROS-based architecture
+        \item Developed ROS services bridging C++ navigation stack and Python behavior layer to optimize fleet-level coordination
+        \item Performance-tested ROS services on large-scale maps to validate scalability for fleets of hundreds of robots
+        \item Integrated reusable navigation features into existing ROS architecture to expand access to fleet behaviors
     \end{itemize}
     \cvevent{\textbf{GreenSight}}{| \textbf{UAV Robotics Engineer Co--op}}{\textit{06/2023 -- 12/2023}}{\textit{Boston, MA}}
     \begin{itemize}
         \item Developed RTOS firmware for communications between a swarm of drones and GCS over LoRa for collecting real-time weather data
-        \item Implemented a Hardware-Abstraction-Layer (HAL) in C for the ESP32 platform to interface with a custom LoRa chipset
-        \item Created a custom SPI driver for the ESP32 to connect to peripherals for the drone's data collection
+        \item Implemented a Hardware-Abstraction-Layer (HAL) in C for the ESP32 platform to interface with a custom LoRa chipset using SPI
+        % \item Created a custom SPI driver for the ESP32 to connect to peripherals for the drone's data collection
     \end{itemize}
     \cvevent{\textbf{Fulfil Solutions}}{| \textbf{Robotics Software Controls Co--op}}{\textit{07/2022 -- 12/2022}}{\textit{Redwood City, CA}}
     \begin{itemize}
@@ -155,28 +160,40 @@ pdfstartview = {FitH},    % initial view
     \cvevent{\textbf{Doble Engineering}}{| \textbf{Software Engineering Co--op}}{\textit{07/2021 -- 12/2021}}{\textit{Marlborough, MA}}
     \begin{itemize}
         \item Developed an external data persistence mechanism in C\# running on the .NET framework for various Doble software products
-        \item Designed and deployed a firmware installation wizard using Windows Presentation Foundation (WPF) for Doble instruments
+        % \item Designed and deployed a firmware installation wizard using Windows Presentation Foundation (WPF) for Doble instruments
     \end{itemize}
     % ----- EXPERIENCE -----
     \vspace{-1.5em}
     % ----- PROJECTS -----
     \cvsection{Projects}
-    \cvevent{\textbf{Open Sourced ROS2 Delta Robot}}{}{\textit{01/2025 -- 03/2025}}{}
+    \cvevent{\textbf{Open Source Potential Field Motion Planner}}{}{\textit{04/2025 -- 12/2025}}{}
     \begin{itemize}
-        \item Designed and fabricated a 3-DOF delta robot using 3D printed parts and Dynamixel motors
-        \item Derived Jacobian for planning and executing both position and velocity trajectories
-        \item Authored a configurable ROS 2 package to interface with any delta robot and provide motion planning and sensor telemetry
+        \item Developed a real-time C++ motion planning library using potential fields for whole-body collision avoidance
+        \item Authored a modular C++ framework and ROS2 package enabling rapid integration across diverse robot platforms
+        \item Engineered trajectory generation with RK4 integration, soft saturation, and rate limiting for smooth motion
     \end{itemize}
-    \cvevent{\textbf{Toasting Bread with Franka Robot Arm}}{}{\textit{11/2024 -- 12/2024}}{}
+    % \cvevent{\textbf{ROS2 Delta Robot}}{}{\textit{01/2025 -- 03/2025}}{}
+    % \begin{itemize}
+    %     \item Designed and fabricated a 3-DOF delta robot using 3D printed parts and Dynamixel motors
+    %     \item Derived Jacobian for planning and executing both position and velocity trajectories
+    %     \item Authored a configurable ROS 2 package to interface with any delta robot and provide motion planning and sensor telemetry
+    % \end{itemize}
+    \cvevent{\textbf{Extended Kalman Filter for 6-Wheel Mars Rover}}{}{\textit{07/2025 -- 09/2025}}{}
     \begin{itemize}
-        \item Implemented a ROS2 package to interface with the MoveIt API for sending motion requests to the Franka robot arm
-        \item Utilized an Intel Realsense camera to identify april tag markers for the robot to interact with the scene
-        \item Collaborated within a group of students to sequence the camera and robot with the scene elements to autonomously toast bread
+        \item Derived and implemented an Extended Kalman Filter in C++ fusing IMU, wheel encoder, and LiDAR measurements
+        \item Simulated rover kinematics in Python to tune process and measurement noise covariances
+        \item Architected a ROS2 package for real-time sensor interfacing and state estimation pipelines
     \end{itemize}
+    % \cvevent{\textbf{Toasting Bread with Franka Robot Arm}}{}{\textit{11/2024 -- 12/2024}}{}
+    % \begin{itemize}
+    %     \item Implemented a ROS2 package to interface with the MoveIt API for sending motion requests to the Franka robot arm
+    %     \item Utilized an Intel Realsense camera to identify april tag markers for the robot to interact with the scene
+    %     % \item Collaborated within a group of students to sequence the camera and robot with the scene elements to autonomously toast bread
+    % \end{itemize}
     \cvevent{\textbf{KUKA Mobile Manipulator Pick and Place Simulation}}{}{\textit{11/2024 -- 12/2024}}{}
     \begin{itemize}
         \item Implemented a task-space feed-forward controller for the KUKA YouBot in Python for pick and place tasks
-        \item Derived Jacobian for omni-directional mobile base and robotic arm to generate velocity trajectories for robot arm and the mobile base
+        \item Derived combined Jacobians for omni-directional base and arm to generate coordinated velocity trajectories
     \end{itemize}
     % \cvevent{\textbf{Automated Poker Table}}{}{\textit{01/2023 -- 04/2023}}{}
     % \begin{itemize}
@@ -185,11 +202,5 @@ pdfstartview = {FitH},    % initial view
     %     \item Trained a Convolutional Neural Network to classify cards for game management and software shuffling
     %     \item Earned first place for Northeastern's ECE Capstone 2023
     % \end{itemize}
-    \cvevent{\textbf{Extended Kalman Filter for 6-Wheel Mars Rover}}{}{\textit{07/2025 -- Present}}{}
-    \begin{itemize}
-        \item Derived and implemented an Extended Kalman filter in C++ for state estimation, fusing data from wheel encoders, an IMU, and a LiDaR
-        \item Simulated the rover's kinematics in Python to tune process and measurement noise covariances and visualize planned trajectories
-        \item Architected a ROS2 Package to interface with sensors and handle real-time data processing
-    \end{itemize}
     % ----- PROJECTS -----
 \end{document}
